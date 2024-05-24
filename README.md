@@ -33,7 +33,9 @@ By Stefany Florez
  
 
 ##### Resultado Obtenido:
-- Aqui pones lo que llenamos ese día.
+- Se obtuvo un status code “200” con la keyword “Ok”
+- Se observa la lista de usuarios registrados en la API, y uno de ellos es “George”.
+
 
 ### ReqresAPI-002: Verificar el funcionamiento del EndPoint de la API Reqres relacionado a la solicitud de información de un Usuario en específico, este usuario deberá estar registrado en el BackEnd
 - Abrir Postman
@@ -50,7 +52,10 @@ By Stefany Florez
 
   
 ##### Resultado Obtenido:
-•	Lo mismo aqui.
+- Se obtuvo el status code “200” con la palabra Keyword “Ok”.
+- Se observa la información del usuario registrado en la API.
+- Se obtiene el usuario buscado “Michael”.
+
 
 ### ReqresAPI-003: Verificar el funcionamiento del EndPoint de la API Reqres relacionado a la creación de un Usuario exitosamente, este usuario deberá estar registrado en el BackEnd al final de la transacción
 - Abrir Postman
@@ -68,7 +73,10 @@ By Stefany Florez
 
 
 ##### Resultado Obtenido:
-- Aaqui igual.
+- Se obtuvo un status code “201” con la keyword “Created”.
+- Se observa la información del usuario creado.
+- Se valida que el usuario insertado con nombre “Ivette” coincide con la respuesta.
+
 
 ### ReqresAPI-004: Verificar el funcionamiento del EndPoint de la API Reqres relacionado al Registro de un Usuario exitosamente, este usuario deberá quedar registrado en el BackEnd al final de la transacción
 - Abrir Postman
@@ -84,7 +92,10 @@ By Stefany Florez
 - Validar que en la respuesta se obtiene el id de registro
 
 ##### Resultado Obtenido:
-- Aaqui igual.
+- Cuando se ejecuta una petición del tipo POST se esperaría un Status Code 201 relacionado con una solicitud de creación del registro, sin embargo, estamos recibiendo un status code 200 que no corresponde a la creación sino mas bien a una modificación de un registro
+
+##### Recomendación:
+- Se recomienda al equipo de desarrollo poder revisar los flujos de los request de creación de nuevos registros en el BackEnd 
 
 ### ReqresAPI-005: Verificar el funcionamiento del EndPoint de la API Reqres relacionado la actualización de un Usuario exitosamente, este usuario deberá estar registrado en el BackEnd antes de realizar la transacción
 - Abrir Postman
@@ -101,7 +112,8 @@ By Stefany Florez
 
 
 ##### Resultado Obtenido:
-- Aaqui igual.
+- Se obtuvo un Status Code “200” y la keyword “Ok”.
+- Se observa la información del usuario.
 
 ### ReqresAPI-006: Verificar el funcionamiento del EndPoint de la API Reqres relacionado la actualización de un Recurso exitosamente, este usuario deberá estar registrado en el BackEnd antes de realizar la transacción
 - Abrir Postman
@@ -117,7 +129,9 @@ By Stefany Florez
 
 
 ##### Resultado Obtenido:
-- Aaqui igual.
+- Se obtuvo el status code “200” y la keyword “Ok”.
+- Se observa la actualización del recurso en la API.
+
 
 
 ### ReqresAPI-007: Verificar el funcionamiento del EndPoint de la API Reqres relacionado la eliminación de un usuario exitosamente, este usuario deberá estar registrado en el BackEnd antes de realizar la transacción
@@ -132,7 +146,7 @@ By Stefany Florez
 - KeyWord: Deleted
 
 ##### Resultado Obtenido:
-- Aaqui igual.
+- Se obtuvo el status code “204” y la keyword “Deleted”.
 
 ### ReqresAPI-008: Verificar el funcionamiento del EndPoint de la API Reqres relacionado la eliminación de un usuario de manera fallida, este usuario deberá estar registrado en el BackEnd antes de realizar la transacción
 - Abrir Postman
@@ -147,6 +161,9 @@ By Stefany Florez
 
 ##### Resultado Obtenido:
 - El resultado obtenido es un Status Code 204, sin embargo, si el usuario no existe en la BBDD debería arrojar un error 400 “Not Found”
+
+##### Recomendación:
+-  Se recomienda revisar el flujo de borrado para que no obtengamos un falso positivo con usuarios que no existen en el BackEnd
 
 # DashBoard Example:
 
